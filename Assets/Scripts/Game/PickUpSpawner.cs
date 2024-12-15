@@ -3,17 +3,19 @@ using System.Collections;
 using System.Collections.Generic;
 using Catch.Game.PickUps;
 using Catch.Services;
+using Catch.Utility;
 using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 namespace Catch.Game
 {
-    public class PickUpSpawner : MonoBehaviour
+    public class PickUpSpawner : SingletonMonoBehaviour<PickUpSpawner>
     {
         #region Variables
 
-        [SerializeField] private List<PickUpAndProbability> _pickUpsVariants;
+        [SerializeField] private List<PickUpAndProbability> _pickUpPrefabs;
         [SerializeField] private float _baseSpawnRate = 2f;
         [SerializeField] private float _spawnRateGain = 15f;
         [SerializeField] private float _spawnRateGainDelay = 2f;
@@ -31,8 +33,16 @@ namespace Catch.Game
             StartIncreasingSpawnRate();
         }
 
-        #endregion
+        private void OnValidate()
+        {
+            foreach (PickUpAndProbability probability in _pickUpPrefabs)
+            {
+                probability.Validate();
+            }
+        }
 
+        #endregion
+        
         #region Private methods
 
         private float GetRandomDelayBasedOnRate()
@@ -44,7 +54,7 @@ namespace Catch.Game
         {
             float sum = 0f;
 
-            foreach (PickUpAndProbability p in _pickUpsVariants)
+            foreach (PickUpAndProbability p in _pickUpPrefabs)
             {
                 sum += p.probability;
             }
@@ -52,12 +62,12 @@ namespace Catch.Game
             float cumulative = 0f;
             float randomValue = Random.Range(0f, sum);
 
-            foreach (PickUpAndProbability pickup in _pickUpsVariants)
+            foreach (PickUpAndProbability pickup in _pickUpPrefabs)
             {
                 cumulative += pickup.probability;
                 if (randomValue < cumulative)
                 {
-                    return pickup.dropPrefab;
+                    return pickup.pickUpPrefab;
                 }
             }
 
@@ -76,10 +86,10 @@ namespace Catch.Game
         private IEnumerator IncreaseSpawnrate()
         {
             yield return new WaitForSeconds(_spawnRateGainDelay);
-            _spawnRate *= _spawnRateGain/100f + 1;
+            _spawnRate *= _spawnRateGain / 100f + 1;
             StartCoroutine(IncreaseSpawnrate());
         }
-        
+
         private void SpawnDrop()
         {
             PickUp dropPrefab = GetRandomDrop();
@@ -93,6 +103,7 @@ namespace Catch.Game
             {
                 yield break;
             }
+
             SpawnDrop();
             StartCoroutine(SpawnWithDelay(GetRandomDelayBasedOnRate()));
         }
@@ -111,14 +122,27 @@ namespace Catch.Game
 
         #region Local data
 
-        [Serializable] private struct PickUpAndProbability
+        [Serializable]
+        private struct PickUpAndProbability
         {
             #region Variables
 
-            [SerializeField] public PickUp dropPrefab;
+            [HideInInspector]
+            public string Name;
+            public PickUp pickUpPrefab;
+            [FormerlySerializedAs("Probability")]
             [Header("relative probability, not actual percentage")]
             [Range(0f, 100f)]
-            [SerializeField] public float probability;
+            public float probability;
+
+            #endregion
+            
+            #region Public methods
+
+            public void Validate()
+            {
+                Name = pickUpPrefab != null ? pickUpPrefab.name : string.Empty;
+            }
 
             #endregion
         }

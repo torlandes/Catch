@@ -1,5 +1,4 @@
 using Catch.Services;
-using Catch.Game;
 using UnityEngine;
 
 namespace Catch.Game.PickUps
@@ -21,10 +20,10 @@ namespace Catch.Game.PickUps
             if (other.CompareTag(Tag.Box))
             {
                 PerformActions();
-                Destroy(gameObject);
+                Destroy(other.gameObject);
             }
         }
-
+        
         #endregion
 
         #region Protected methods

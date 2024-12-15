@@ -97,9 +97,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca98074363df47eba1bd63e95466286e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pickUpsVariants:
-  - dropPrefab: {fileID: 3250636568627115683, guid: 30a6e764c3326ff4785877d129325a8c, type: 3}
-    probability: 100
+  _pickUpPrefabs:
+  - Name: 
+    pickUpPrefab: {fileID: 3250636568627115683, guid: 30a6e764c3326ff4785877d129325a8c, type: 3}
+    probability: 70
   _baseSpawnRate: 2
   _spawnRateGain: 15
   _spawnRateGainDelay: 2

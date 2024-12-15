@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Catch.Services
 {
-    public class AudioService: SingletonMonoBehaviour<AudioService>
+    public class AudioService : SingletonMonoBehaviour<AudioService>
     {
         #region Variables
 
@@ -19,7 +19,6 @@ namespace Catch.Services
             {
                 return;
             }
-
             _sfxAudioSource.PlayOneShot(clip);
         }
 
