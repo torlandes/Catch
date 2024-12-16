@@ -28,7 +28,7 @@ namespace Catch.Services
         #endregion
 
         #region Properties
-        
+
         public bool IsGameOver { get; set; }
         public int Lives => _lives;
         public int Score => _score;
@@ -56,16 +56,33 @@ namespace Catch.Services
 
         public void AddScore(int points)
         {
+            if (IsGameOver)
+            {
+                return;
+            }
+            
             _score += points;
             OnScoreChanged?.Invoke(_score);
         }
 
         public void ChangeLife(int value)
         {
+            if (IsGameOver)
+            {
+                return;
+            }
+
             _lives += value;
             _lives = Mathf.Clamp(_lives, 0, _maxLives);
             OnLiveChanged?.Invoke(_lives);
             CheckGameEnd();
+        }
+
+        public void GameRestart()
+        {
+            IsGameOver = false;
+            Reset();
+            SceneLoaderService.Instance.StartGame();
         }
 
         #endregion
@@ -78,13 +95,6 @@ namespace Catch.Services
             {
                 OnGameOver?.Invoke();
             }
-        }
-        
-        public void GameRestart()
-        {
-            IsGameOver = false;
-            Reset();
-            SceneLoaderService.Instance.StartGame();
         }
 
         #endregion
