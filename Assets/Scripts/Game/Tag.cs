@@ -5,7 +5,8 @@
         #region Variables
 
         public const string Box = "Box";
-        public const string DeathZone = "DeathZone";
+        public const string GoodPickUp = "GoodPickUp";
+        public const string OtherPickUp = "OtherPickUp";
 
         #endregion
     }

@@ -149,6 +149,10 @@ namespace Catch.Game
 
         #endregion
 
+        public void ResetFallSpeed()
+        {
+            _spawnRate = 1f;
+        }
         //private float _timeToNext;
     }
 }

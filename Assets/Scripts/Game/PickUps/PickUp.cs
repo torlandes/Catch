@@ -20,7 +20,7 @@ namespace Catch.Game.PickUps
             if (other.CompareTag(Tag.Box))
             {
                 PerformActions();
-                Destroy(other.gameObject);
+                Destroy(gameObject);
             }
         }
         
