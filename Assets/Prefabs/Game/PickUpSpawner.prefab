@@ -100,8 +100,14 @@ MonoBehaviour:
   _pickUpPrefabs:
   - Name: 
     pickUpPrefab: {fileID: 3250636568627115683, guid: 30a6e764c3326ff4785877d129325a8c, type: 3}
-    probability: 70
-  _baseSpawnRate: 2
-  _spawnRateGain: 15
+    probability: 15
+  - Name: 
+    pickUpPrefab: {fileID: -4357506736941658144, guid: 5f7e1e15746412d4395ac53f49541c04, type: 3}
+    probability: 15
+  - Name: 
+    pickUpPrefab: {fileID: 2443510010871512072, guid: f8d5ef806599c8b42a5e103559a37c60, type: 3}
+    probability: 10
+  _baseSpawnRate: 1
+  _spawnRateGain: 1
   _spawnRateGainDelay: 2
   _spawnRate: 0

@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 1159791564267871403}
   - component: {fileID: 6277091020599412063}
   - component: {fileID: 7151814384784133568}
-  - component: {fileID: 3250636568627115683}
-  - component: {fileID: 8381622704288329364}
+  - component: {fileID: 2443510010871512072}
+  - component: {fileID: 5371735058116725379}
   m_Layer: 7
-  m_Name: GoodPickUp
-  m_TagString: GoodPickUp
+  m_Name: LifePickUp
+  m_TagString: OtherPickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77,8 +77,8 @@ SpriteRenderer:
   m_SortingLayerID: 1559027405
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2139531177, guid: db337d4a470fba74591cb5f5021e48a9, type: 3}
-  m_Color: {r: 1, g: 0.91000736, b: 0.8632076, a: 1}
+  m_Sprite: {fileID: 1150374172, guid: 00b9bcc6802d61f418f5233468c8da3b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -147,10 +147,10 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.036106706}
+  m_Offset: {x: 0.0034101803, y: 0.111928776}
   serializedVersion: 2
-  m_Radius: 2.9651766
---- !u!114 &3250636568627115683
+  m_Radius: 4.0785255
+--- !u!114 &2443510010871512072
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -159,13 +159,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1633907492935643417}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 619d535333fe453c8b69989dc4132a78, type: 3}
+  m_Script: {fileID: 11500000, guid: 977b23b135e0421d8b6ab7c89818c194, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pickUpVfxPrefab: {fileID: 317371043396003698, guid: 73eec858a858a334ba2724a912400ae7, type: 3}
-  _pickUpAudio: {fileID: 8300000, guid: 2b53254a174fa9c48b491bb5a5e2186e, type: 3}
-  _score: 1
---- !u!95 &8381622704288329364
+  _pickUpVfxPrefab: {fileID: 317371043396003698, guid: e0b56589c894d4746800dc72bda28657, type: 3}
+  _pickUpAudio: {fileID: 8300000, guid: b24c790c02a43ba4984ad1e71f225e5b, type: 3}
+  _lifeChange: 1
+--- !u!95 &5371735058116725379
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -175,7 +175,7 @@ Animator:
   m_GameObject: {fileID: 1633907492935643417}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b00d1416bc4cbcb44b23c85d36b4b5fa, type: 2}
+  m_Controller: {fileID: 9100000, guid: b6922807f29cc324aadae3732531b0c0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

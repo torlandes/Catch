@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 7046982161063599885}
   - component: {fileID: 1159791564267871403}
   - component: {fileID: 6277091020599412063}
-  - component: {fileID: 7151814384784133568}
-  - component: {fileID: 3250636568627115683}
-  - component: {fileID: 8381622704288329364}
+  - component: {fileID: -4357506736941658144}
+  - component: {fileID: 228917908750462725}
+  - component: {fileID: 3470478712921019565}
   m_Layer: 7
-  m_Name: GoodPickUp
-  m_TagString: GoodPickUp
+  m_Name: BadPickUp
+  m_TagString: OtherPickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.12, y: 0.12, z: 0.12}
+  m_LocalScale: {x: 0.125, y: 0.2, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -77,8 +77,8 @@ SpriteRenderer:
   m_SortingLayerID: 1559027405
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2139531177, guid: db337d4a470fba74591cb5f5021e48a9, type: 3}
-  m_Color: {r: 1, g: 0.91000736, b: 0.8632076, a: 1}
+  m_Sprite: {fileID: -2130627848, guid: 22c87bfb09f457b478810959fc280850, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -115,8 +115,44 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &7151814384784133568
-CircleCollider2D:
+--- !u!114 &-4357506736941658144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633907492935643417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f77268446a414b9d94da76515d273f21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pickUpVfxPrefab: {fileID: 317371043396003698, guid: f27ad72fb7b714a44a927f7b1c6c0b76, type: 3}
+  _pickUpAudio: {fileID: 8300000, guid: 8010b0a74455e9e40916ed4fd94d7e63, type: 3}
+  _score: -1
+--- !u!95 &228917908750462725
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633907492935643417}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d5efe4cced139984c82e29c835278544, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!70 &3470478712921019565
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -147,42 +183,6 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.036106706}
-  serializedVersion: 2
-  m_Radius: 2.9651766
---- !u!114 &3250636568627115683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1633907492935643417}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 619d535333fe453c8b69989dc4132a78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _pickUpVfxPrefab: {fileID: 317371043396003698, guid: 73eec858a858a334ba2724a912400ae7, type: 3}
-  _pickUpAudio: {fileID: 8300000, guid: 2b53254a174fa9c48b491bb5a5e2186e, type: 3}
-  _score: 1
---- !u!95 &8381622704288329364
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1633907492935643417}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b00d1416bc4cbcb44b23c85d36b4b5fa, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 6, y: 7}
+  m_Direction: 0
