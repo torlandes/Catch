@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Box
   - FxTemporaire
+  - GoodPickUp
+  - OtherPickUp
   layers:
   - Default
   - TransparentFX
@@ -48,4 +50,7 @@ TagManager:
     locked: 0
   - name: Box
     uniqueID: 1559027405
+    locked: 0
+  - name: DeathZone
+    uniqueID: 70470433
     locked: 0
