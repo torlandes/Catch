@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e43469e07cbc6c34f919ac89440f241e
+guid: 6e92c814f9d25c845bf66e37da79216e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -175,7 +175,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: blood4_0
+      name: blood1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -189,14 +189,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b26e86522fde8f4a9f870a6a39dcef4
-      internalID: 1456852025
+      spriteID: 55354b15f49ee534991bf82efc827230
+      internalID: 1736132444
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blood4_1
+      name: blood1_1
       rect:
         serializedVersion: 2
         x: 64
@@ -210,14 +210,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22f323018a7b85042b05443f55890aae
-      internalID: -116728019
+      spriteID: 41f29b5d6896b024f81ae8d0b00d711c
+      internalID: 1217148314
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blood4_2
+      name: blood1_2
       rect:
         serializedVersion: 2
         x: 128
@@ -231,14 +231,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9b2da0eee0ccf14b9b4b222cdb7aecb
-      internalID: -995305225
+      spriteID: 1d630a04d97dafb4ea1d4f3fd4c6a07f
+      internalID: -219203301
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blood4_3
+      name: blood1_3
       rect:
         serializedVersion: 2
         x: 192
@@ -252,14 +252,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5d8dfedeac3fed45b3c8a1208105859
-      internalID: -44515972
+      spriteID: 38fe1efde9ae0e44795d0c61cd61541d
+      internalID: -504259306
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blood4_4
+      name: blood1_4
       rect:
         serializedVersion: 2
         x: 256
@@ -273,14 +273,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6492fc09c1439a2439ef65384918425e
-      internalID: 584878769
+      spriteID: ea220c979d5a28f47b64d203c8fcee33
+      internalID: -1479496984
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blood4_5
+      name: blood1_5
       rect:
         serializedVersion: 2
         x: 320
@@ -294,8 +294,134 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca7cbf339c08af343b3825d15cb12c95
-      internalID: -1319098849
+      spriteID: 1e5e03353677cd3458974c7c541235f0
+      internalID: -1499811374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood1_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 429fa50b3fd56f1429c2be82b54cd2fa
+      internalID: -1785115122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood1_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c65127080c9ed4419b9180d4b6bd1ee
+      internalID: 535746663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood1_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edc2be94ac12245408f14725248d71fc
+      internalID: 1878579886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood1_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1e58733025e61a4c9fcf1be75b41ae3
+      internalID: -715554414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood1_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a2a69f11ff208d419feeadf31d8bff4
+      internalID: -2070321954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood1_11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da7c02073b23c044995340d6f3f17e24
+      internalID: 254406800
       vertices: []
       indices: 
       edges: []
@@ -311,12 +437,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      blood4_0: 1456852025
-      blood4_1: -116728019
-      blood4_2: -995305225
-      blood4_3: -44515972
-      blood4_4: 584878769
-      blood4_5: -1319098849
+      blood1_0: 1736132444
+      blood1_1: 1217148314
+      blood1_10: -2070321954
+      blood1_11: 254406800
+      blood1_2: -219203301
+      blood1_3: -504259306
+      blood1_4: -1479496984
+      blood1_5: -1499811374
+      blood1_6: -1785115122
+      blood1_7: 535746663
+      blood1_8: 1878579886
+      blood1_9: -715554414
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
