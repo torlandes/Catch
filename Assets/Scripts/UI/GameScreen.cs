@@ -14,9 +14,11 @@ namespace Catch.UI
 
         [Header("Game object settings")]
         [SerializeField] private GameObject[] _hearts;
+        [SerializeField] private GameObject LoseHP;
 
         [Header("Buttons")]
         [SerializeField] private Button _pauseButton;
+        [SerializeField] private AudioClip _tapAudio;
 
         #endregion
 
@@ -47,6 +49,7 @@ namespace Catch.UI
 
         private void PauseButtonClickedCallback()
         {
+            AudioService.Instance.PlaySfx(_tapAudio);
             PauseService.Instance.TogglePause();
         }
 
@@ -65,7 +68,7 @@ namespace Catch.UI
 
         private void UpdateScore()
         {
-            _scoreLabel.text = $"Score: {GameService.Instance.Score}";
+            _scoreLabel.text = $"EYES: {GameService.Instance.Score}";
         }
 
         #endregion
