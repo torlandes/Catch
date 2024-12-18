@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8903911689410475575}
   m_Layer: 5
-  m_Name: VFX_Blood1
+  m_Name: VFX_Blood5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,13 +26,13 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1886244581880616695}
+  - {fileID: 8845331772925828680}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &4940832062412107598
+--- !u!1 &1405339706527733320
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,38 +40,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1886244581880616695}
-  - component: {fileID: 6360302416238122048}
-  - component: {fileID: 1691127088420528982}
+  - component: {fileID: 8845331772925828680}
+  - component: {fileID: 1154349902520640320}
+  - component: {fileID: 9024485908011316809}
   m_Layer: 0
-  m_Name: blood1_0
+  m_Name: blood4_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1886244581880616695
+--- !u!4 &8845331772925828680
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4940832062412107598}
+  m_GameObject: {fileID: 1405339706527733320}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8903911689410475575}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &6360302416238122048
+--- !u!212 &1154349902520640320
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4940832062412107598}
+  m_GameObject: {fileID: 1405339706527733320}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -103,11 +103,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 70470433
-  m_SortingLayer: 2
+  m_SortingLayerID: 1559027405
+  m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1736132444, guid: 6e92c814f9d25c845bf66e37da79216e, type: 3}
-  m_Color: {r: 0.92346203, g: 1, b: 0, a: 0.89411765}
+  m_Sprite: {fileID: 1456852025, guid: e43469e07cbc6c34f919ac89440f241e, type: 3}
+  m_Color: {r: 0, g: 1, b: 0.034409046, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -117,17 +117,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &1691127088420528982
+--- !u!95 &9024485908011316809
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4940832062412107598}
+  m_GameObject: {fileID: 1405339706527733320}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9aab87bc225a0ca4ba7ce8e2d7be82f2, type: 2}
+  m_Controller: {fileID: 9100000, guid: d5b9184b226e9e5408e60dd2df4c94a3, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
